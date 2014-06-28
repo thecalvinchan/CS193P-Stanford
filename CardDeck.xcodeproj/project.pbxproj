@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1B41F5195EB31500DF6D0F /* CardDeckCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B41F4195EB31500DF6D0F /* CardDeckCard.m */; };
 		3E3C3869195E9E5E003A430C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C3868195E9E5E003A430C /* Foundation.framework */; };
 		3E3C386B195E9E5E003A430C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C386A195E9E5E003A430C /* CoreGraphics.framework */; };
 		3E3C386D195E9E5E003A430C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E3C386C195E9E5E003A430C /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1B41F3195EB31500DF6D0F /* CardDeckCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardDeckCard.h; path = Models/CardDeckCard.h; sourceTree = "<group>"; };
+		3E1B41F4195EB31500DF6D0F /* CardDeckCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardDeckCard.m; path = Models/CardDeckCard.m; sourceTree = "<group>"; };
 		3E3C3865195E9E5E003A430C /* CardDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3C3868195E9E5E003A430C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3E3C386A195E9E5E003A430C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,8 @@
 				3E3C387D195E9E5E003A430C /* CardDeckViewController.h */,
 				3E3C387E195E9E5E003A430C /* CardDeckViewController.m */,
 				3E3C3880195E9E5E003A430C /* Images.xcassets */,
+				3E1B41F3195EB31500DF6D0F /* CardDeckCard.h */,
+				3E1B41F4195EB31500DF6D0F /* CardDeckCard.m */,
 				3E3C386F195E9E5E003A430C /* Supporting Files */,
 			);
 			path = CardDeck;
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1B41F5195EB31500DF6D0F /* CardDeckCard.m in Sources */,
 				3E3C3875195E9E5E003A430C /* main.m in Sources */,
 				3E3C3879195E9E5E003A430C /* CardDeckAppDelegate.m in Sources */,
 				3E3C387F195E9E5E003A430C /* CardDeckViewController.m in Sources */,
@@ -457,6 +463,7 @@
 				3E3C3899195E9E5E003A430C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E3C389A195E9E5E003A430C /* Build configuration list for PBXNativeTarget "CardDeckTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				3E3C389C195E9E5E003A430C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
