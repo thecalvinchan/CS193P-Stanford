@@ -9,21 +9,27 @@
 #import "CardDeckViewController.h"
 
 @interface CardDeckViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (nonatomic) int flipCount;
 @end
 
 @implementation CardDeckViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (void)setFlipCount:(int)flipCount {
+    _flipCount = flipCount;
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+}
+- (IBAction)cardFlip:(UIButton *)sender {
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"BackCard"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+
+    } else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"FrontCard"] forState:UIControlStateNormal];
+        [sender setTitle:@"A♠︎" forState:UIControlStateNormal];
+    }
+    self.flipCount++;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
