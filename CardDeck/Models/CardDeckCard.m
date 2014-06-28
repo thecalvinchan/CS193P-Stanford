@@ -9,7 +9,6 @@
 #import "CardDeckCard.h"
 
 @interface CardDeckCard()
-
 @end
 
 @implementation CardDeckCard

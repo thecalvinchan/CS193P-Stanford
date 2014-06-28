@@ -1,12 +1,12 @@
 //
-//  CardDeckViewController.h
+//  CardDeckPlayingCardDeck.h
 //  CardDeck
 //
 //  Created by Calvin on 6/28/14.
 //  Copyright (c) 2014 com.vzy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CardDeckDeck.h"
 
-@interface CardDeckViewController : UIViewController
+@interface CardDeckPlayingCardDeck : CardDeckDeck
 @end
